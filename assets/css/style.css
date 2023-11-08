@@ -1,3 +1,52 @@
 html{
     font-family: 'Roboto Flex', sans-serif;
+    font-size: 62.5%;
+}
+
+body{
+    grid-template-areas: 
+        "header header header header"
+        "hero hero hero hero"
+        "about about about about"
+        "services services services services"
+        "projects projects projects projects"
+        "footer footer footer footer";
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 1.6rem;
+}
+
+/* HEADER */
+.header{
+    grid-area: header;
+    background-color: pink;
+}
+
+/* HERO */
+.hero{
+    grid-area: hero;
+    background-color: red;
+}
+
+/* ABOUT */
+.about{
+    grid-area: about;
+    background-color: green;
+}
+
+/* SERVICES */
+.services{
+    grid-area: services;
+    background-color: yellow;
+}
+
+/* PROJECTS */
+.projects{
+    grid-area: projects;
+    background-color: purple;
+}
+
+/* FOOTER */
+.footer{
+    grid-area: footer;
+    background-color: orange;
 }
